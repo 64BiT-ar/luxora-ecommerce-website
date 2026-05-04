@@ -1,26 +1,35 @@
 ````markdown
+```
+
+at the top and extra closing backticks at the bottom.
+
+GitHub is treating the whole README as one big code block instead of formatted markdown.
+
+Use this **clean version**:
+
+```markdown
 # Luxora - E-Commerce Website
 
-Luxora is a responsive e-commerce website built using HTML, CSS, and JavaScript. It has a clean product layout, category filtering, search functionality, and a shopping cart system.
+Luxora is a responsive e-commerce website built using HTML, CSS, and JavaScript. It includes product filtering, search functionality, and a shopping cart system.
 
 ## Features
 
 - Responsive design for desktop, tablet, and mobile
-- Product cards generated with JavaScript
+- Product cards generated dynamically using JavaScript
 - Featured products section
-- Product category filtering
+- Category-based product filtering
 - Search panel with live product search
 - Shopping cart modal
-- Add, remove, and update product quantity
+- Add, remove, and update cart quantity
 - Cart total calculation
-- Local storage support for saving cart items
+- Local storage support for saving cart data
 
 ## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
-- Local Storage
+- Local Storage API
 
 ## Project Structure
 
@@ -31,34 +40,32 @@ luxora-ecommerce/
 ├── styles.css
 ├── script.js
 └── README.md
-````
+```
 
 ## How to Run
 
-1. Download or clone the project.
-2. Open the project folder.
-3. Open `index.html` in your browser.
+1. Download or clone the repository  
+2. Open the project folder  
+3. Open `index.html` in your browser  
 
-No installation is required.
+No installation required.
 
 ## Main Sections
 
-* Navigation bar
-* Hero section
-* Featured products
-* Product categories
-* All products
-* About section
-* Shopping cart
-* Footer
+- Navigation Bar
+- Hero Section
+- Featured Products
+- Product Categories
+- All Products
+- About Section
+- Shopping Cart
+- Footer
 
 ## Notes
 
-This project is built for learning and portfolio purposes. It focuses on front-end functionality and does not include real payment processing or backend integration.
+This project was built for learning and portfolio purposes. It focuses on front-end development and does not include backend integration or real payment processing.
 
 ## Author
 
 Ahmed Raza
-
-```
 ```
