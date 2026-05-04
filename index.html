@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxora - Premium Essentials Curated For You</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">◆</span>
+                <span class="brand-text">LUXORA</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="search-toggle" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+
+                <button class="cart-toggle" aria-label="Shopping Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-panel" id="searchPanel">
+        <div class="search-input-wrapper">
+            <input type="text" id="searchInput" placeholder="Search for products..." class="search-input">
+            <button class="search-close" aria-label="Close search">×</button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Curated Excellence</h1>
+                <p class="hero-subtitle">Discover a handpicked collection of premium essentials designed for modern living</p>
+                <button class="cta-button" onclick="document.getElementById('featured').scrollIntoView({behavior: 'smooth'})">
+                    Explore Now
+                </button>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=600&fit=crop" alt="Featured product showcase" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to discover</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </header>
+
+    <section id="featured" class="featured-section">
+        <div class="section-header">
+            <h2 class="section-title">Featured Collection</h2>
+            <p class="section-subtitle">New arrivals and customer favorites</p>
+        </div>
+
+        <div class="products-grid" id="featuredProducts"></div>
+    </section>
+
+    <section id="collections" class="collections-section">
+        <div class="section-header">
+            <h2 class="section-title">Shop by Category</h2>
+        </div>
+
+        <div class="collections-grid">
+            <div class="collection-card" data-filter="accessories">
+                <div class="collection-image">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop" alt="Accessories collection">
+                </div>
+                <h3 class="collection-name">Accessories</h3>
+            </div>
+
+            <div class="collection-card" data-filter="electronics">
+                <div class="collection-image">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop" alt="Electronics collection">
+                </div>
+                <h3 class="collection-name">Electronics</h3>
+            </div>
+
+            <div class="collection-card" data-filter="home">
+                <div class="collection-image">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=400&fit=crop" alt="Home collection">
+                </div>
+                <h3 class="collection-name">Home Essentials</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="all-products-section">
+        <div class="section-header">
+            <h2 class="section-title">All Products</h2>
+
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="accessories">Accessories</button>
+                <button class="filter-btn" data-filter="electronics">Electronics</button>
+                <button class="filter-btn" data-filter="home">Home</button>
+            </div>
+        </div>
+
+        <div class="products-grid" id="allProducts"></div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2 class="section-title">About Luxora</h2>
+
+            <p class="about-text">
+                At Luxora, we believe that quality shouldn't be compromised. Our team carefully selects every product
+                to make sure it meets our standards for craftsmanship, durability, and design. We work with trusted
+                artisans and brands around the world to bring you items that make everyday life feel better.
+            </p>
+
+            <div class="about-features">
+                <div class="about-feature">
+                    <div class="feature-icon">✓</div>
+                    <h3>Curated Selection</h3>
+                    <p>Handpicked items from trusted sources</p>
+                </div>
+
+                <div class="about-feature">
+                    <div class="feature-icon">✓</div>
+                    <h3>Fast Shipping</h3>
+                    <p>Worldwide delivery in 3-5 business days</p>
+                </div>
+
+                <div class="about-feature">
+                    <div class="feature-icon">✓</div>
+                    <h3>Quality Guarantee</h3>
+                    <p>30-day return policy, no questions asked</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <button class="cart-close" aria-label="Close cart">×</button>
+            <h2 class="cart-title">Your Cart</h2>
+
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart-message">Your cart is empty</p>
+            </div>
+
+            <div class="cart-summary" id="cartSummary" style="display: none;">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span id="shipping">$0.00</span>
+                </div>
+
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+
+                <button class="checkout-button">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="cartOverlay"></div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#featured">New Arrivals</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxora. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
