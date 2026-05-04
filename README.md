@@ -1,13 +1,3 @@
-````markdown
-```
-
-at the top and extra closing backticks at the bottom.
-
-GitHub is treating the whole README as one big code block instead of formatted markdown.
-
-Use this **clean version**:
-
-```markdown
 # Luxora - E-Commerce Website
 
 Luxora is a responsive e-commerce website built using HTML, CSS, and JavaScript. It includes product filtering, search functionality, and a shopping cart system.
@@ -33,33 +23,19 @@ Luxora is a responsive e-commerce website built using HTML, CSS, and JavaScript.
 
 ## Project Structure
 
-```text
 luxora-ecommerce/
-│
-├── index.html
-├── styles.css
-├── script.js
-└── README.md
-```
+- index.html
+- styles.css
+- script.js
+- README.md
 
 ## How to Run
 
-1. Download or clone the repository  
-2. Open the project folder  
-3. Open `index.html` in your browser  
+1. Download or clone the repository
+2. Open the project folder
+3. Open `index.html` in your browser
 
 No installation required.
-
-## Main Sections
-
-- Navigation Bar
-- Hero Section
-- Featured Products
-- Product Categories
-- All Products
-- About Section
-- Shopping Cart
-- Footer
 
 ## Notes
 
@@ -68,4 +44,3 @@ This project was built for learning and portfolio purposes. It focuses on front-
 ## Author
 
 Ahmed Raza
-```
